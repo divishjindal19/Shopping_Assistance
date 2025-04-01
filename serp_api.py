@@ -25,7 +25,7 @@ def search_products(query, location):
         "location": location,  # Add location to the search parameters
         "hl": "en",  # Language
         "gl": gl,  # Country
-        "api_key": "55c9b2d43d65c2bf2769e504062abb93a6b26c9f44551786b059928eda18792a"  # Replace with your SerpAPI key
+        "api_key": "55c9b2d43d65c2bf2769e5019872akb93c3g16c9f44551786b059928eda18792a"  # Replace with your SerpAPI key
     }
     search = GoogleSearch(params)
     results = search.get_dict()
