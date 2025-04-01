@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='custom.css') }}">
+    <title>Shopping Assistant</title>
+</head>
+<body>
+    <h1>Welcome to Your AI Shopping Assistant!</h1>
+    <form action="/search" method="post">
+        <label for="query">What Are You Looking for?</label>
+        <input type="text" id="query" name="query" placeholder="e.g., gift ideas for my wife's birthday OR simply a product name" required>
+        <label for="location">Enter City, State/Country (optional but defaults to the US market if left blank):</label>
+        <input type="text" id="location" name="location" placeholder="e.g., Austin, Texas">
+        <button type="submit">Search for the Best Options and Summarize</button>
+    </form>
+
+    <!-- Spinner -->
+    <div id="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    {% if refined_query %}
+        <div class="results">
+            <h2>Refined Query:</h2>
+            <p>{{ refined_query }}</p>
+            <h2>Comparison Table:</h2>
+            {{ comparison_table|safe }}
+            <h2>Summary:</h2>
+            {{ summary|safe }}
+        </div>
+    {% endif %}
+
+    <script>
+        const form = document.querySelector("form");
+        const spinner = document.getElementById("loading-spinner");
+
+        form.addEventListener("submit", function () {
+            // Show the spinner when the form is submitted
+            spinner.style.display = "flex";
+        });
+    </script>
+</body>
+</html>
