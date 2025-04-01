@@ -45,3 +45,8 @@ Feel free to submit issues and pull requests to enhance the Shopping Assistant!
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
+
+![Screenshot 2025-04-01 195504](https://github.com/user-attachments/assets/2bcd92ac-19a2-41c7-b498-19e8df58c117)
+![Screenshot 2025-04-01 195548](https://github.com/user-attachments/assets/c3337cd7-c057-497f-b29d-6d4c508213eb)
+![Screenshot 2025-04-01 195555](https://github.com/user-attachments/assets/2104193f-dc32-4691-81f6-ca661684083a)
+
