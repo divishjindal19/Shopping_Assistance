@@ -6,8 +6,6 @@ import pandas as pd
 
 # Llama Model Configuration
 MODEL_ID = "meta-llama/llama-3-1-70b-instruct"
-WATSONX_URL = "https://us-south.ml.cloud.ibm.com"
-PROJECT_ID = "skills-network"
 
 model_parameters = {
     "decoding_method": "greedy",
